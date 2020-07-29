@@ -18,7 +18,11 @@ def mergeCSVDatasets(filePath, files):
 
     merged_df = pd.concat(dfs, axis=0)    # Vertical stacking each dataframe on another to create a merged dataframe
 
-    print("merged dataset with {} rows".format(merged_df.shape[0]))
+    merged_df.drop_duplicates(inplace=True, keep="first")  # Remove any duplicate rows if exists
+
+    merged_df.dropna(axis=0, inplace=True)   # Remove rows with null values in any column
+
+    print("Merged dataset with {} rows".format(merged_df.shape[0]))
     merged_df.to_csv(filePath + 'merged.csv', index=False, mode='a')
 
 
