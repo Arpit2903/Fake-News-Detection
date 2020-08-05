@@ -9,7 +9,7 @@ python main.py
 * Merged dataset contains the pre-Processed data which does not have
     - Missing/null values
     - Duplicate records
-* Merged dataset is stored into noSQL database (MongoDB). Steps to store dataset into MongoDB are mentioned in the [datasets/README.md](https://github.com/Arpit2903/Fake-News-Detection/dataset) 
+* Merged dataset is stored into noSQL database (MongoDB). Steps to store dataset into MongoDB are mentioned in the [dataset/README.md](https://github.com/Arpit2903/Fake-News-Detection/tree/master/dataset) 
 * Before running various ML models, the data is pre-processed to:
     - Remove noisy/stopwords 
     - Converting news articles into Document vector for ML model
