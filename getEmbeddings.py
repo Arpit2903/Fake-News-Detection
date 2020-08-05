@@ -12,7 +12,7 @@ from gensim.models.doc2vec import LabeledSentence
 from gensim import utils
 from nltk.corpus import stopwords
 
-
+#Cleaning the text data(i.e news content) by removing stopwords.
 def textClean(text):
     text = re.sub(r"[^A-Za-z0-9^,!.\/'+-=]", " ", text)
     text = text.lower().split()
@@ -21,7 +21,7 @@ def textClean(text):
     text = " ".join(text)
     return (text)
 
-
+#This function removes all the punctuation marks
 def cleanup(text):
     text = textClean(text)
     text = text.translate(str.maketrans("", "", string.punctuation))
@@ -34,7 +34,7 @@ def constructLabeledSentences(data):
         sentences.append(LabeledSentence(utils.to_unicode(row).split(), ['Text' + '_%s' % str(index)]))
     return sentences
 
-
+#Doc2Vec
 def getEmbeddings(path,vector_dimension=300):
     data = pd.read_csv(path)
 
