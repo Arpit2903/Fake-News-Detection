@@ -1,2 +1,5 @@
-/datasets/
+/datasets/*.csv
 __pycache__/
+.idea/
+
+*.pyc
