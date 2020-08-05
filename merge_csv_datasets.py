@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 
 def mergeCSVDatasets(filePath, files):
@@ -23,6 +24,9 @@ def mergeCSVDatasets(filePath, files):
     merged_df.dropna(axis=0, inplace=True)   # Remove rows with null values in any column
 
     print("Merged dataset with {} rows".format(merged_df.shape[0]))
+    if os.path.exists(filePath + 'merged.csv'):
+        os.remove(filePath + 'merged.csv')
+
     merged_df.to_csv(filePath + 'merged.csv', index=False, mode='a')
 
 
