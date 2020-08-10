@@ -1,6 +1,18 @@
 # Fake-News-Detection
 * Fake news is an invention – a lie created out of nothing – that takes the appearance of real news with the aim of deceiving people. This project aims to classify the news as fake or real using the various ML models.
 
+## Final Project
+* Implemented Simple logistic regression, Random forest and Neural network to predict the news.
+* Comparison of Accuracies for all the implemented models are as below:  
+| Machine learning model   	| Accuracy 	|
+|--------------------------	|----------	|
+| Naive Bayes classifier   	| 72.12%   	|
+| Decision Tree classifier 	| 81.00%   	|
+| Logistic Regression      	| 90.32%   	|
+| Support Vector Machine   	| 91.36%   	|
+| Random forest            	| 81.58%   	|
+| Neural Network           	| 92.69%   	|
+
 ## Milestone-2 
 * To merge multiple datasets into one, run the following python script. Before running the script, specify the files configuration to be merged in the main.py
 ```
