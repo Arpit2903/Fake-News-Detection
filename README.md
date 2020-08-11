@@ -1,6 +1,20 @@
 # Fake-News-Detection
 * Fake news is an invention – a lie created out of nothing – that takes the appearance of real news with the aim of deceiving people. This project aims to classify the news as fake or real using the various ML models.
 
+## Final Project
+* Implemented Simple logistic regression, Random forest and Neural network to predict the news.
+* Comparison of Accuracies for all the implemented models are as below:  
+|----------------------------------------------------|    
+| Machine learning model&nbsp;&nbsp;&nbsp;&nbsp;   	| Accuracy&nbsp;|  
+|------------------------------------	|--------------|  
+| Naive Bayes classifier&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 72.12%&nbsp;&nbsp;&nbsp;&nbsp;|  
+| Decision Tree classifier&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 81.00%&nbsp;&nbsp;&nbsp;&nbsp;|  
+| Logistic Regression&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 90.32%&nbsp;&nbsp;&nbsp;&nbsp;|   
+| Support Vector Machine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 91.36%&nbsp;&nbsp;&nbsp;&nbsp;|  
+| Random forest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 81.58%&nbsp;&nbsp;&nbsp;&nbsp;|  
+| Neural Network&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 92.69%&nbsp;&nbsp;&nbsp;&nbsp;|  
+|-----------------------------------------------------|  
+
 ## Milestone-2 
 * To merge multiple datasets into one, run the following python script. Before running the script, specify the files configuration to be merged in the main.py
 ```
